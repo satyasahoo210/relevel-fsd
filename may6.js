@@ -3,12 +3,11 @@ function astroguru(numChildren, spouseName, location, job) {
 }
 
 function max(n1, n2) {
-    if(n1 == n2) {
-        console.log('Numbers are equal')
-    }
-    else if(n1 > n2) {
+    if(n1 > n2) {
         return n1;
-    } else {
+    } else if (n2 > n1) {
         return n2;
+    } else {
+        console.log('Numbers CAN NOT be compared or are equal')
     }
 }
